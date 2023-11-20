@@ -8,9 +8,10 @@ body {
 }
 </style>
 <form method="post" name="music" action="">
-  <input type="radio" name="music" value="radio" onClick="changeColour('b')" checked>Violet
-  <input type="radio" name="music" value="radio" onClick="changeColour('r')">Vert
-  <input type="radio" name="music" value="radio" onClick="changeColour('p')">Jaune
+  <input type="radio" name="music" value="radio" onClick="changeColour('a')" checked>violet
+  <input type="radio" name="music" value="radio" onClick="changeColour('b')">vert
+  <input type="radio" name="music" value="radio" onClick="changeColour('c')">jaune
+  <input type="radio" name="music" value="radio" onClick="changeColour('d')">rouge
 </form>
 <title>Petits Pas Chaussures enfant</title>
 </head>
@@ -37,14 +38,17 @@ function changeColour(value)
     var color = document.body.style.backgroundColor;
     switch(value)
     {
-        case 'b':
+        case 'a':
             color = "#DDD6FE";
         break;
-        case 'r':
+        case 'b':
             color = "#A7F3D0";
         break;
-        case 'p':
-            color = "#FEF3C7";
+        case 'c':
+            color = "#FEF08A";
+        break;
+        case 'd':
+            color = "#FECACA";
         break;
     }
     document.body.style.backgroundColor = color;
